@@ -8,6 +8,7 @@ import connectDB from "./src/db/connectDB.js";
 // import seedDB from "./src/db/seed.js";
 
 import adminRouter from "./src/routes/admin.routes.js";
+import userRouter from "./src/routes/user.routes.js";
 
 
 const app = express();
@@ -31,6 +32,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/admin", adminRouter)
+app.use("/api/user", userRouter)
 
 connectDB();
 // seedDB();

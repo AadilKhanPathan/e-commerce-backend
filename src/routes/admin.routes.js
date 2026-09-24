@@ -21,4 +21,6 @@ adminRouter.get("/list", listItem);
 // DELETE: api/admin/remove/:id
 adminRouter.delete("/remove/:id", removeItem);
 
+// GET: api/
+
 export default adminRouter;
